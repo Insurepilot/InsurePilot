@@ -119,24 +119,24 @@ export default function Gallery() {
           <div className="text-sm text-gray-500">Upload photos to preview on the homepage</div>
         </div>
 
-+        <div className="mb-4 grid grid-cols-1 sm:grid-cols-3 gap-3 items-center">
-+          <div className="col-span-1">
-+            <label className="block text-sm text-gray-600">Cloudinary Cloud Name</label>
-+            <input value={cloudName} onChange={(e) => setCloudName(e.target.value)} className="mt-1 w-full rounded border px-3 py-2" placeholder="your-cloud-name" />
-+          </div>
-+          <div className="col-span-1">
-+            <label className="block text-sm text-gray-600">Upload Preset</label>
-+            <input value={uploadPreset} onChange={(e) => setUploadPreset(e.target.value)} className="mt-1 w-full rounded border px-3 py-2" placeholder="unsigned_preset" />
-+          </div>
-+          <div className="col-span-1 flex items-center gap-3">
-+            <label className="inline-flex items-center gap-2">
-+              <input type="checkbox" checked={useCloudinary} onChange={(e) => setUseCloudinary(e.target.checked)} />
-+              <span className="text-sm">Upload to Cloudinary</span>
-+            </label>
-+            <div className="text-xs text-gray-400">(Stores config in your browser)</div>
-+          </div>
-+        </div>
-+
+        <div className="mb-4 grid grid-cols-1 sm:grid-cols-3 gap-3 items-center">
+          <div className="col-span-1">
+            <label className="block text-sm text-gray-600">Cloudinary Cloud Name</label>
+            <input value={cloudName} onChange={(e) => setCloudName(e.target.value)} className="mt-1 w-full rounded border px-3 py-2" placeholder="your-cloud-name" />
+          </div>
+          <div className="col-span-1">
+            <label className="block text-sm text-gray-600">Upload Preset</label>
+            <input value={uploadPreset} onChange={(e) => setUploadPreset(e.target.value)} className="mt-1 w-full rounded border px-3 py-2" placeholder="unsigned_preset" />
+          </div>
+          <div className="col-span-1 flex items-center gap-3">
+            <label className="inline-flex items-center gap-2">
+              <input type="checkbox" checked={useCloudinary} onChange={(e) => setUseCloudinary(e.target.checked)} />
+              <span className="text-sm">Upload to Cloudinary</span>
+            </label>
+            <div className="text-xs text-gray-400">(Stores config in your browser)</div>
+          </div>
+        </div>
+
          <div
            onDrop={onDrop}
            onDragOver={(e) => e.preventDefault()}
@@ -148,21 +148,14 @@ export default function Gallery() {
                Choose files
                <input ref={inputRef} onChange={onInputChange} type="file" accept="image/*" multiple className="hidden" />
              </label>
--            <button
--              type="button"
--              onClick={() => setImages([])}
--              className="px-3 py-2 text-sm border rounded bg-white"
--            >
--              Clear
--            </button>
-+            <button
-+              type="button"
-+              onClick={() => setImages([])}
-+              className="px-3 py-2 text-sm border rounded bg-white"
-+            >
-+              Clear
-+            </button>
-+            {uploading && <div className="ml-3 text-sm text-gray-500">Uploading...</div>}
+            <button
+              type="button"
+              onClick={() => setImages([])}
+              className="px-3 py-2 text-sm border rounded bg-white"
+            >
+              Clear
+            </button>
+            {uploading && <div className="ml-3 text-sm text-gray-500">Uploading...</div>}
            </div>
          </div>
 
