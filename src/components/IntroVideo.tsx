@@ -4,7 +4,7 @@ import { Play, Pause, Volume2, VolumeX } from 'lucide-react';
 
 export default function IntroVideo() {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
 
   const togglePlay = () => {
@@ -51,7 +51,7 @@ export default function IntroVideo() {
           {/* Note: In a real production app, replace this src with the actual agent's video URL */}
           <video
             ref={videoRef}
-            src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/friday.mp4"
+            src="https://res.cloudinary.com/duddyuzey/video/upload/v1781262633/WhatsApp_Video_2026-06-12_at_2.43.31_PM_m6atgz.mp4"
             className="w-full h-full object-cover"
             autoPlay
             muted={isMuted}

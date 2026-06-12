@@ -23,7 +23,7 @@ export default function About() {
           >
             <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl max-w-md mx-auto lg:mx-0 border-2 border-sbi-accent">
               <img 
-                src="/advisor-photo.jpg.jpeg" 
+                src="https://res.cloudinary.com/duddyuzey/image/upload/v1781262549/advisor-photo.jpg_dypn1c.jpg" 
                 alt="Expert Insurance Advisor" 
                 className="w-full h-full object-cover"
               />
@@ -47,9 +47,10 @@ export default function About() {
             </div>
             <h2 className="text-3xl md:text-5xl font-black text-sbi-dark mb-6 leading-tight">
               Not just an agent, <span className="text-sbi-amber">your lifelong trust partner.</span>
+              <span className="text-sm text-gray-400 ml-3">(Updated)</span>
             </h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              Hi, I'm your local certified SBI Life Insurance advisor. My goal isn't just to sell policies, but to understand your life's aspirations and build a robust safety net around them.
+              Hi, I'm Brijesh Kumar Shukla your local certified SBI Life Insurance advisor. My goal isn't just to sell policies, but to understand your life's aspirations and build a robust safety net around them.
             </p>
             <p className="text-lg text-gray-600 mb-10 leading-relaxed">
               Whether you are planning for your child's higher education, securing a peaceful retirement, or seeking comprehensive life cover, I am here to guide you every step of the way with honesty and expertise.
