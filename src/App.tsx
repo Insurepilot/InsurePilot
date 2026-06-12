@@ -4,7 +4,6 @@
  */
 
 import Navigation from './components/Navigation';
-import Gallery from './components/Gallery';
 import Hero from './components/Hero';
 import IntroVideo from './components/IntroVideo';
 import About from './components/About';
@@ -18,7 +17,6 @@ export default function App() {
     <div className="min-h-screen bg-slate-50 flex flex-col font-sans selection:bg-sbi-blue/20 selection:text-sbi-dark">
       <Navigation />
       <main className="flex-grow">
-        <Gallery />
         <Hero />
         <IntroVideo />
         <About />
