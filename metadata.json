@@ -1,0 +1,6 @@
+{
+  "name": "InsurePilot",
+  "description": "Professional landing page for an SBI Life Insurance Agent.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
